@@ -1,4 +1,4 @@
-user = int(input("How old are you: "))
+user_age = int(input("How old are you: "))
 current_year = 2023
 estimated_year = 2050
 
