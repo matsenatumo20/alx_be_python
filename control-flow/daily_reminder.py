@@ -10,8 +10,8 @@ match priority:
     case "low":
         reminder = f"Note: '{task}' is a low priority task"
     case _:
-        reminder = f"{task} (unknown priority)"
-        
+        reminder = f"Reminder: {task} (unknown priority)"
+
 if time_bound == "yes":
     reminder += " that requires immediate attention today!"
 elif time_bound == "no":
