@@ -11,12 +11,30 @@ def main():
         display_menu()
         choice = input("Enter your choice: ")
         if choice == "1":
-            return "Add Item"
+            item = input("Enter the item to add: ")
+            shopping_list.append(item)
+            return f"Item '{item}' added to the list."
+            pass
+
         elif choice == "2":
-            return "Remove Item"
+            if not shopping_list:
+                return "Item is not found"
+            else:
+                print = input("Current_list:", shopping_list)
+                item = input("Enter the item to remove")
+                shopping_list.remove(item)
+                return f"Item '{item}' removed from the list."
+            pass
+                
         elif choice == "3":
-            return "View List"
+            if not shopping_list:
+                return "The list is empty"
+            else:
+                print("Current_list:", shopping_list)
+            pass
+
         elif choice == "4":
             return "Goodbye!"
+            break
         else:
             return "Invalid choice. Please try again."
