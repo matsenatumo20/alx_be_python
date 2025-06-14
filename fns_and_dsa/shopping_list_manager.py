@@ -1,4 +1,10 @@
 def display_menu():
+    """
+    Displays the menu options for the shopping list manager.
+
+    :return: None
+    """
+    # function implementation...
     print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
@@ -6,6 +12,15 @@ def display_menu():
     print("4. Exit")
 
 def main():
+    """
+    Main function that implements the shopping list manager.
+
+    This function initializes an empty shopping list and enters a loop where it continuously displays a menu with options to the user.
+    Based on the user's choice, it adds an item to the list, removes an item, displays the list, or exits the program.
+
+    :return: None
+    """
+    # function implementation...
     shopping_list = []
     while True:
         display_menu()
