@@ -11,5 +11,5 @@ def safe_divide(numerator, denominator):
         quotient = numerator / denominator
         return quotient 
     except ZeroDivisionError:
-        print("Error: Division by zero is undefined")
+        print("Error: Cannot divide by zero")
         return None
