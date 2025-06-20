@@ -4,7 +4,7 @@ def safe_divide(numerator, denominator):
         numerator = float(numerator)
         denominator = float(denominator)
     except ValueError:
-        print("Error: Both numerator and denominator must be numeric.")
+        print("Error: Please enter numeric values only.")
         return None
     
     try:
