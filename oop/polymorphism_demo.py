@@ -26,3 +26,4 @@ circle = Circle(7)
 print(f"The area of the Rectangle is: {rectangle.area()}")
 print(f"The area of the Circle is: {circle.area()}")
 
+
