@@ -22,3 +22,14 @@ class PrintBook(Book):
 
     def __str__(self):
         return f"{super().__str__()}, Page Count: {self.page_count} pages"
+
+class Library:
+    def __init__(self):
+        self.books = []
+
+    def add_book(self,book: Book):
+        self.books.append(book)
+
+    def list_books(self):
+        for book in self.books:
+            print(book)
